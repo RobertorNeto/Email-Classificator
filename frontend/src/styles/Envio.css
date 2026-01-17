@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body, html, button, input, textarea, h1, h2, h3, p, span {
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-email {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.header-box {
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.header-titulo {
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+}
+
+.input-text {
+  width: 600px;
+  height: 250px; 
+  border: none;
+  padding: 16px;  
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+}
+
+.input-text:disabled{     
+  cursor: not-allowed;  
+  opacity: 0.7;         
+  transform: none; 
+}
+
+.input-pdf-box {
+  background-color: #f8fafc; 
+  border: 2px dashed #cbd5e1; 
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  width: 600px;
+}
+
+.input-pdf-box:hover {
+  border-color: #2885C7;
+  background-color: #f0f9ff;
+}
+
+.input-pdf-box h1 {
+  font-size: 1.2rem;
+  color: #334155;
+  margin: 15px 0 5px 0;
+  font-weight: 600;
+}
+
+.input-pdf-box h2 {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 400;
+  margin: 0;
+}
+
+.select-file{
+  margin-top: 15px;
+  display: flex;
+  align-Items: center;
+  gap: 10px
+}
+
+.file{
+  color: black;
+  font-Weight: 500; 
+  margin: 0
+}
+
+.remove-file-btn {
+  background-color: #f8fafc;
+  color: #2885C7;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.remove-file-btn:hover {
+  background-color: #DCEEF8;
+  transform: scale(1.1);
+}
+.upload{
+  display: none;
+}
+
+.container-botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-envio{
+  width: 650px;
+  border: none;
+  border-radius: 15px;
+  padding: 17px 24px;
+  background-color: #2885C7;
+  color: white;
+  font-size: 15px;  
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.botao-envio:hover{
+  transform: scale(1.02);
+}
+
+.botao-envio:disabled {
+  background-color: #ccc;
+  color: #666;          
+  cursor: not-allowed;  
+  opacity: 0.7;         
+  transform: none; 
+}
+
+.email-btn{
+  width: 24px;
+  height: 24px;
+}
+
+.resultado-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.resultado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 20px;
+}
+
+.resultado-header h2 {
+  font-size: 1.5rem;
+  color: #334155;
+}
+
+.Improdutivo{
+  background-color: red;
+  color: white;
+  border-radius: 35px;
+  padding: 15px 15px;
+}
+
+.Produtivo{
+  background-color: green;
+  color: white;
+  border-radius: 35px;
+  padding: 15px 15px;
+}
+
+.info-group label {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.resposta-box {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 20px;
+  color: #1e293b;
+}
+
+.resultado-footer {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 10px;
+}
+
+.botao-voltar {
+  background-color: transparent;
+  color: #2885C7;
+  border: 2px solid #2885C7;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.botao-voltar:hover {
+  background-color: #2885C7;
+  color: white;
+}
+
+
+
+
+

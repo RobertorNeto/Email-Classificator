@@ -1,0 +1,24 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:3000
+      - VITE_INTERNAL_API_URL=http://backend:3000
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      -"5000:5000"
+    environment:
+      - GEMINI_API_KEY=AIzaSyDo3Qg027wtH_ZXUbPesC2oqs3K3I5-5Mc
+    volumes:
+      - ./ProjetoTraineeCJRBack/uploads:/app/uploads
+
+networks:
+  default:
+    name: minha-redes
