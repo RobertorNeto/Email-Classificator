@@ -8,6 +8,7 @@ function Envio() {
   const [loading, setLoading] = useState(false);
   const [resultado, setResultado] = useState<any>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
   
   const handleBoxClick = () => {
     fileInputRef.current?.click();
@@ -39,8 +40,6 @@ function Envio() {
     selectedFile ? formData.append('file', selectedFile) : formData.append('texto', inputText);
 
     try {
-      const apiUrl = "http://localhost:5000"
-      console.log("URL da API:", apiUrl);
       const response = await axios.post(`${apiUrl}/email`, formData);
       setResultado(response.data);
     } catch (error) {
