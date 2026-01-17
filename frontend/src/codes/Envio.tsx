@@ -39,7 +39,9 @@ function Envio() {
     selectedFile ? formData.append('file', selectedFile) : formData.append('texto', inputText);
 
     try {
-      const response = await axios.post(import.meta.env.VITE_API_URL, formData);
+      const apiUrl = "http://localhost:5000"
+      console.log("URL da API:", apiUrl);
+      const response = await axios.post(`${apiUrl}/email`, formData);
       setResultado(response.data);
     } catch (error) {
       console.error(error);
