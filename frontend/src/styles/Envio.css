@@ -37,7 +37,7 @@ body, html, button, input, textarea, h1, h2, h3, p, span {
 }
 
 .input-text {
-  width: 600px;
+  width: 650px;
   height: 250px; 
   border: none;
   padding: 16px;  
@@ -68,7 +68,7 @@ body, html, button, input, textarea, h1, h2, h3, p, span {
   align-items: center;
   justify-content: center;
   min-height: 250px;
-  width: 600px;
+  width: 650px;
 }
 
 .input-pdf-box:hover {
@@ -133,7 +133,7 @@ body, html, button, input, textarea, h1, h2, h3, p, span {
 }
 
 .botao-envio{
-  width: 650px;
+  width: 700px;
   border: none;
   border-radius: 15px;
   padding: 17px 24px;
@@ -242,6 +242,34 @@ body, html, button, input, textarea, h1, h2, h3, p, span {
 .botao-voltar:hover {
   background-color: #2885C7;
   color: white;
+}
+
+.divisoria {
+    display: flex;
+    align-items: center; 
+    color: #64748b;      
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 650px;
+    text-transform: uppercase;
+}
+
+.divisoria::before,
+.divisoria::after {
+    content: "";         
+    flex: 1;            
+    border-bottom: 2px solid #cbd5e1; 
+    height: 1px;
+}
+
+.divisoria::before {
+    margin-right: 15px;
+}
+
+.divisoria::after {
+    margin-left: 15px;
 }
 
 

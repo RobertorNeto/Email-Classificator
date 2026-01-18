@@ -57,11 +57,11 @@ function Envio() {
           <div className='text-email'>
             <div className="header-box">
               <img src='text.svg' className='icone-robot' alt='robot icon' />
-              <span className="header-titulo">Escreva seu E-mail neste campo</span>
+              <span className="header-titulo">Escreva o conteúdo do seu E-mail neste campo</span>
             </div>
 
             <textarea
-              placeholder="Escreva seu E-mail aqui para classificação"
+              placeholder="Escreva aqui..."
               value={inputText}
               onChange={(e) => {
                 setInputText(e.target.value);
@@ -71,6 +71,8 @@ function Envio() {
               className="input-text"
             />
           </div>
+
+          <div className='divisoria'>ou</div>
 
           <div className='input-pdf-box' onClick={handleBoxClick}>
             <div className="icon-container">
