@@ -5,8 +5,8 @@ services:
     ports:
       - "3000:5173"
     environment:
-      - VITE_API_URL=http://localhost:3000
-      - VITE_INTERNAL_API_URL=http://backend:3000
+      - VITE_API_URL=http://localhost:5000
+      - VITE_INTERNAL_API_URL=http://backend:5000
     depends_on:
       - backend
   backend:
@@ -15,7 +15,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - GEMINI_API_KEY={sua_chave}
+      - GEMINI_API_KEY=AIzaSyBFUgiCt9qSJS6CY0vqje_oh42iSlvhMNQ
     volumes:
       - ./backend:/app
 
