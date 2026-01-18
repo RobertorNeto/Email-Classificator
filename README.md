@@ -25,6 +25,15 @@
 ### Pré-requisitos
 - [Docker](https://www.docker.com/) e Docker Desktop instalados.
 
+### ⚠️ Ajuste de Performance (Docker)
+
+Antes de rodar o projeto no Docker, é necessário editar o arquivo de dependências para evitar lentidão excessiva no download.
+
+1. Abra o arquivo `requirements.txt` na raiz da pasta backend.
+2. **Remova** a linha que importa a extensão do Spacy diretamente do GitHub:
+   ```text
+   [https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl](https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl)
+
 ### ⚠️ Passo Importante: Configuração da API
 
 Para que a inteligência artificial funcione, você precisa configurar sua chave do Google Gemini no arquivo do Docker.
